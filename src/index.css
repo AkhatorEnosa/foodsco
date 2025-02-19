@@ -119,6 +119,48 @@
         @apply text-xl leading-[18px]
     }
 
+    .featured {
+        @apply relative flex flex-col justify-center items-center rounded-[29.6px] bg-white/50 backdrop-blur-md shadow-lg px-8 py-7
+    }
+
+    .featured-img {
+        @apply relative -top-14 flex justify-center items-center w-fit h-fit rounded-full overflow-clip
+    }
+
+    .featured-rating {
+        @apply  w-full flex gap-2 items-end text-[#FFD700] mb-3
+    }
+
+    .featured-rating p {
+        font-family: "Inter", serif; 
+        @apply text-sm
+    }
+
+    .featured-content {
+        @apply flex flex-col gap-4
+    }
+
+    .featured-desc {
+        font-family: "Nunito", serif;
+        @apply flex flex-col gap-2
+    }
+
+    .featured-desc > h3 {
+        @apply font-bold text-2xl 
+    }
+
+    .featured-desc > p {
+        @apply text-xl leading-7
+    }
+
+    .featured-footer {
+        @apply w-full flex justify-between items-center font-bold text-[28px]
+    }
+
+    .featured-footer  span {
+       @apply p-[9.4px] bg-[#FD5200] rounded-full flex items-center justify-center
+    }
+
     .section-heading {
         font-family: "Nunito", serif;
         @apply font-bold text-[44px] 

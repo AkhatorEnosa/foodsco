@@ -17,6 +17,10 @@ import about1 from "/about/about1.png"
 import about2 from "/about/about2.jpeg"
 import about3 from "/about/about3.jpeg"
 
+import feature1 from "/features/feature1.png"
+// import feature2 from "/features/feature2.png"
+// import feature3 from "/features/feature3.png"
+
 
 export const CUSTOMERS = [
     customer1,
@@ -41,6 +45,7 @@ export default {
     heroImg,
     about1,
     about2,
-    about3
+    about3,
+    feature1
 }
 

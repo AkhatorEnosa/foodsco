@@ -6,6 +6,10 @@ import profile from "/profile.png"
 import basket from "/basket.png"
 import leftArrow from "/left-arrow.png"
 import rightArrow from "/right-arrow.png"
+import left from "/left.png"
+import right from "/right.png"
+import plus from "/plus.png"
+import star from "/star.png"
 
 export default {
     facebook,
@@ -15,5 +19,9 @@ export default {
     profile,
     basket,
     leftArrow,
-    rightArrow
+    rightArrow,
+    left,
+    right,
+    plus,
+    star
 }
