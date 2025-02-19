@@ -10,7 +10,9 @@
         font-family: "Poppins", serif;
         font-weight: 400;
         font-style: normal;
-        background: white;
+        background: url('/bg-img.png');
+        background-position: center;
+        background-repeat: repeat-y;
     }
 
     nav {
@@ -63,15 +65,15 @@
     }
 
     .hero-content > img {
-        @apply absolute top-5 right-0
+        @apply absolute top-20 right-0
     }
 
     .button-opaque {
-        @apply bg-[#FD5200] text-white px-[30px] py-[10px] text-[16px] font-semibold rounded-full hover:shadow-md
+        @apply w-fit bg-[#FD5200] text-white px-[30px] py-[10px] text-[16px] font-semibold rounded-full hover:shadow-md
     }
 
     .button-transparent {
-        @apply bg-transparent border-[1px] border-[#FD5200] text-[#FD5200] px-[30px] py-[10px] text-[16px] font-medium rounded-full hover:shadow-md
+        @apply w-fit bg-transparent border-[1px] border-[#FD5200] text-[#FD5200] px-[30px] py-[10px] text-[16px] font-medium rounded-full hover:shadow-md
     }
 
     .details {
@@ -86,5 +88,42 @@
     .details-title {
         @apply text-sm
     }
+
+    .arrows {
+        @apply w-fit h-fit p-2 rounded-full bg-white cursor-pointer hover:shadow-md
+    }
+
+    .about-wrapper {
+        @apply w-full px-[100px] grid grid-cols-2 justify-center items-center gap-24 mt-28 mb-28
+    }
+
+    .about-desc {
+        @apply  flex flex-col
+    }
+
+    .about-img {
+        @apply  grid grid-cols-2 gap-5 justify-center items-center
+    }
+
+    .about-img-content-container {
+        @apply h-60 rounded-3xl overflow-clip flex flex-col items-center justify-center
+    }
+    
+    .about-text {
+        font-family: "Outfit", serif;
+        @apply text-xl leading-[25.2px] mt-4 mb-6
+    }
+    
+    .features-heading > p {
+        font-family: "Outfit", serif;
+        @apply text-xl leading-[18px]
+    }
+
+    .section-heading {
+        font-family: "Nunito", serif;
+        @apply font-bold text-[44px] 
+    }
+
   }
+  
   

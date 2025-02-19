@@ -1,13 +1,13 @@
 import { images } from '../../constants'
 import { CUSTOMERS, MENUS } from '../../constants/images'
-import Button from './Button'
-import Carousel from './Carousel'
-import Details from './Details'
-import Socials from './Socials'
+import Button from '../components/Button'
+import Carousel from '../components/Carousel'
+import Details from '../components/Details'
+import Socials from '../components/Socials'
 
 const Hero = () => {
   return (
-    <div className="hero-wrapper">
+    <section className="hero-wrapper">
         
         <div className='hero-content'>
             <div className='col-span-3'>
@@ -39,7 +39,7 @@ const Hero = () => {
             <Carousel />
             <Socials />
         </div>
-    </div>
+    </section>
   )
 }
 
