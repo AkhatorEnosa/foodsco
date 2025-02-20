@@ -28,7 +28,7 @@
     }
 
     nav ul li {
-        @apply hover:text-[#FD5200] hover:underline cursor-pointer duration-150 transition-all
+        @apply hover:primary-text-color hover:underline cursor-pointer duration-150 transition-all
     }
   
     main {
@@ -37,6 +37,18 @@
   }
 
   @layer components {
+    .primary-bg-color {
+        @apply bg-[#FD5200]
+    }
+
+    .primary-text-color {
+        @apply text-[#FD5200]
+    }
+
+    .primary-border-color {
+        @apply border-[#FD5200]
+    }
+
     .icons {
         @apply flex gap-4
     }
@@ -69,11 +81,11 @@
     }
 
     .button-opaque {
-        @apply w-fit bg-[#FD5200] text-white px-[30px] py-[10px] text-[16px] font-semibold rounded-full hover:shadow-md
+        @apply w-fit primary-bg-color text-white px-[30px] py-[10px] text-[16px] font-semibold rounded-full hover:shadow-md
     }
 
     .button-transparent {
-        @apply w-fit bg-transparent border-[1px] border-[#FD5200] text-[#FD5200] px-[30px] py-[10px] text-[16px] font-medium rounded-full hover:shadow-md
+        @apply w-fit bg-transparent border-[1px] primary-border-color primary-text-color px-[30px] py-[10px] text-[16px] font-medium rounded-full hover:shadow-md
     }
 
     .details {
@@ -113,14 +125,9 @@
         font-family: "Outfit", serif;
         @apply text-xl leading-[25.2px] mt-4 mb-6
     }
-    
-    .features-heading > p {
-        font-family: "Outfit", serif;
-        @apply text-xl leading-[18px]
-    }
 
     .featured {
-        @apply relative flex flex-col justify-center items-center rounded-[29.6px] bg-white/50 backdrop-blur-md shadow-lg px-8 py-7
+        @apply relative flex flex-col justify-center items-center rounded-[29.6px] bg-white/50 backdrop-blur-md shadow-lg px-8 py-7 z-30
     }
 
     .featured-img {
@@ -158,7 +165,33 @@
     }
 
     .featured-footer  span {
-       @apply p-[9.4px] bg-[#FD5200] rounded-full flex items-center justify-center
+       @apply p-[9.4px] primary-bg-color rounded-full flex items-center justify-center
+    }
+
+    .menu {
+        font-family: "Nunito", serif;
+        @apply  w-fit flex flex-col pt-4 p-6 bg-white/90 backdrop-blur-[100px] shadow-md gap-4 rounded-3xl justify-center items-center z-30
+    }
+
+    .menu > h3 {
+        @apply font-bold text-[32px] py-4 px-6
+    }
+
+    .menu-item {
+        @apply w-[430px] px-5 py-4 border-[1px] border-[#E3EBF6] rounded-[20px]
+    }
+
+    .section-wrapper {
+        @apply w-full px-[100px] flex flex-col items-center mb-16
+    }
+
+    .section-header {
+        @apply w-full text-center
+    }
+
+    .section-header > p {
+        font-family: "Outfit", serif;
+        @apply text-xl leading-[18px]
     }
 
     .section-heading {

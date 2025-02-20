@@ -1,5 +1,6 @@
 import bgImage from "/concrete-wall-textured-backgrounds.png"
 import heroImg from "/delicious-spaghetti-dish.png"
+import chef from "/chef-cooking-kitchen-while-wearing-professional-attire.png"
 
 import option1 from "/options/option1.png"
 import option2 from "/options/option2.png"
@@ -43,6 +44,7 @@ export const OPTIONS = [
 export default {
     bgImage,
     heroImg,
+    chef,
     about1,
     about2,
     about3,
