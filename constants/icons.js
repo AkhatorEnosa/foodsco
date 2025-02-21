@@ -10,6 +10,8 @@ import left from "/left.png"
 import right from "/right.png"
 import plus from "/plus.png"
 import star from "/star.png"
+import quoteLeft from "/quote-left.png"
+import quoteRight from "/quote-right.png"
 
 export default {
     facebook,
@@ -23,5 +25,7 @@ export default {
     left,
     right,
     plus,
-    star
+    star,
+    quoteLeft,
+    quoteRight
 }

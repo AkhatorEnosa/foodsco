@@ -12,7 +12,7 @@ const Explore = () => {
         </div>
 
         <div className="relative w-full flex justify-between items-end mt-14 mb-10">
-            <BackgroundCircles number={3} variant={"top-20 rotate-12"}/>
+            <BackgroundCircles number={3} variant={"top-20 rotate-12 gap-40"}/>
 
             <Menu heading={"Meals"} type={MEALS}/>
 

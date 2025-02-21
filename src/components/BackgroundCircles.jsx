@@ -13,7 +13,7 @@ const BackgroundCircles = ({ number, variant}) => {
     }
 
   return (
-    <div className={`absolute ${variant} flex w-fit gap-40 justify-center items-center z-10`}>
+    <div className={`absolute ${variant} flex w-fit justify-center items-center z-10`}>
         {displayCirclesByNumber().map((item) => (
           item
         ))}

@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 import { images } from "../../constants"
 import BackgroundCircles from "../components/BackgroundCircles"
 import Button from "../components/Button"
@@ -14,7 +12,7 @@ const About = () => {
         </div>
 
         <div className="about-img">
-            <BackgroundCircles number={1} variant={"right-[28rem] top-10"}/>
+            <BackgroundCircles number={1} variant={"right-[28rem] top-10 gap-40"}/>
             <div className="flex flex-col h-fit gap-5 right z-40">
                 <div className="about-img-content-container">
                     <img src={images.about2} alt="" />

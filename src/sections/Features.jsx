@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 import { icons } from "../../constants"
 import BackgroundCircles from "../components/BackgroundCircles"
 import Button from "../components/Button"
@@ -14,7 +12,7 @@ const Features = () => {
         </div>
 
         <div className="w-full flex gap-10 mt-36 justify-center items-center mb-14">
-            <BackgroundCircles number={2}/>
+            <BackgroundCircles number={2} variant={"gap-40"}/>
             <span className="p-[9.4px] bg-[#FD5200] rounded-full flex items-center justify-center size-12"><img src={icons.left} alt="" /></span>
                 <FeaturedCard/>
                 <FeaturedCard/>
