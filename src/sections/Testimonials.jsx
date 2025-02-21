@@ -5,7 +5,7 @@ import TestimonialCard from "../components/TestimonialCard"
 
 const Testimonials = () => {
   return (
-    <div className="section-wrapper">
+    <section className="section-wrapper">
         <div className="section-header">
             <h1 className="section-heading">Testimonials</h1>
             <p>What our customers are saying</p>
@@ -44,12 +44,12 @@ const Testimonials = () => {
 
         <div className="banner relative my-28 w-full text-center bg-[url(/backdrop.png)] bg-no-repeat bg-cover py-40 rounded-3xl gap-6 overflow-clip">
             <div className="bg-black/70 w-full h-full absolute top-0 z-10"/>
-            <div className="w-full h-full flex flex-col items-center bg-red-600 z-30">
+            <div className="relative w-full flex flex-col items-center z-30">
                 <h2>Savor the Flavor of Home, Every Time You Eat</h2>
                 <Button title={"See more"}/>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

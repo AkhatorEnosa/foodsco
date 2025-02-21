@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
         <div className='w-full flex justify-between items-end'>
             <Carousel />
-            <Socials />
+            <Socials variant={"size-10 p-2 rounded-full border-[1px] border-black"}/>
         </div>
     </section>
   )
