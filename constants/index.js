@@ -80,3 +80,15 @@ export const TESTIMONIES = [
         title: 'Medical Student in the UK'
     },
 ]
+
+export const ABOUT = [
+    'Features', 'About Us', 'How we Work'
+]
+
+export const COMPANY = [
+    'Blog', 'FAQs', 'Pricing'
+]
+
+export const SUPPORT = [
+    'Terms of Service', 'Privacy Policy', 'Help Center'
+]

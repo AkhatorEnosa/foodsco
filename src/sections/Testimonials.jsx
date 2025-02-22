@@ -15,7 +15,7 @@ const Testimonials = () => {
             <BackgroundCircles number={2} variant={"top-56 left-0 -rotate-[40deg] gap-64"}/>
             <BackgroundCircles number={1} variant={"bottom-0 right-0"}/>
 
-            <div className="grid grid-cols-3 gap-5">
+            <div className="grid lg:grid-cols-3 gap-5">
             {TESTIMONIES.slice(0,3).map((item, index) => (
                     <TestimonialCard 
                         key={index+item.title}
@@ -28,7 +28,7 @@ const Testimonials = () => {
             ))}
             </div>
 
-            <div className="grid grid-cols-2 gap-5">
+            <div className="grid lg:grid-cols-2 gap-5">
             {TESTIMONIES.slice(3).map((item, index) => (
                     <TestimonialCard 
                         key={index+item.title}
@@ -42,9 +42,9 @@ const Testimonials = () => {
             </div>
         </div>
 
-        <div className="banner relative my-28 w-full text-center bg-[url(/backdrop.png)] bg-no-repeat bg-cover py-40 rounded-3xl gap-6 overflow-clip">
-            <div className="bg-black/70 w-full h-full absolute top-0 z-10"/>
-            <div className="relative w-full flex flex-col items-center z-30">
+        <div className="banner relative my-10 lg:my-28 w-full text-center bg-[url(/backdrop.png)] bg-no-repeat bg-cover py-10 px-5 lg:py-40 rounded-3xl gap-6 overflow-clip">
+            <div className="bg-black/70 w-full h-full absolute top-0 left-0 z-10"/>
+            <div className="relative w-full flex flex-col gap-3 items-center z-30">
                 <h2>Savor the Flavor of Home, Every Time You Eat</h2>
                 <Button title={"See more"}/>
             </div>

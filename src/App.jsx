@@ -9,9 +9,9 @@ import Testimonials from "./sections/Testimonials"
 const App = () => {
   return (
     <main>
-      <Navbar />
-      <Hero />
-      <About />
+      {/* <Navbar /> */}
+      {/* <Hero /> */}
+      {/* <About /> */}
       <Features />
       <Explore />
       <Testimonials />
