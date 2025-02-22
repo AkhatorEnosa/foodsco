@@ -6,6 +6,30 @@ export {
     images,
 }
 
+export const FEATUREDMEALS = [
+    {
+        title: "Grilled Steak with Fries",
+        imgSrc: images.feature1,
+        desc: "Made from the finest potatoes...",
+        rating: "4.0",
+        price: "5,000"
+    },
+    {
+        title: "Salad",
+        imgSrc: images.feature2,
+        desc: "An exquisite combination of the best veggies",
+        rating: "4.0",
+        price: "3,500"
+    },
+    {
+        title: "Fried Sausage, Eggs with Mushrooms",
+        imgSrc: images.feature3,
+        desc: "Tomatoes, cherries, Eggs and Sausage for a fine breakfast",
+        rating: "4.0",
+        price: "6,500"
+    },
+]
+
 export const MEALS = [
     {
         title: "Grilled Steak with Fries",

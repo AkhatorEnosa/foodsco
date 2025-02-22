@@ -1,26 +1,26 @@
 /* eslint-disable react/prop-types */
 
-import { icons, images } from "../../constants"
+import { icons } from "../../constants"
 
-const FeaturedCard = () => {
+const FeaturedCard = ({ image, rating, title, desc, price }) => {
   return (
     <div className="featured">
         <div className="featured-img">
-            <img src={images.feature1} alt=""/>
+            <img src={image} alt=""/>
         </div>
 
         <div className="featured-rating">
             <img src={icons.star} alt="" />
-            <p>4.0</p>
+            <p>{rating}</p>
         </div>
 
         <div className="featured-content">
             <div className="featured-desc">
-                <h3>Grilled Steak</h3>
-                <p>Made from the finest potatoes...</p>
+                <h3>{title}</h3>
+                <p>{desc}</p>
             </div>
             <div className="featured-footer">
-                <p>N3,500</p>
+                <p>{price}</p>
                 <span><img src={icons.plus} alt="" /></span>
             </div>
         </div>

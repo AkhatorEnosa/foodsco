@@ -2,7 +2,7 @@ import { icons } from "../../constants"
 
 const Navbar = () => {
   return (
-    <nav className="px-[100px]">
+    <nav>
         <h1>Foodsco</h1>
         <ul>
             <li className="text-[#FD5200] underline">Home</li>

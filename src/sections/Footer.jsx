@@ -17,8 +17,8 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="w-fit">
-                <div className="grid lg:grid-cols-3 gap-10 lg:gap-36">
+            <div className="lg:w-fit">
+                <div className="w-full grid md:grid-cols-3 justify-between lg:gap-36">
                     <div className="flex flex-col gap-4 lg:gap-[29px]">
                         <h3 className="text-[#FF8F5C] font-medium text-lg lg:text-xl">About</h3>
                         <ul className="opacity-70 text-lg gap-2">

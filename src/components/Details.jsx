@@ -12,7 +12,7 @@ const Details = ({ items, heading, title }) => {
         </span>
         <div>
             <h2 className="details-heading">{heading}</h2>
-            <p>{title}</p>
+            <p className="details-title">{title}</p>
         </div>
     </div>
   )

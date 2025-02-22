@@ -19,8 +19,8 @@ import about2 from "/about/about2.jpeg"
 import about3 from "/about/about3.jpeg"
 
 import feature1 from "/features/feature1.png"
-// import feature2 from "/features/feature2.png"
-// import feature3 from "/features/feature3.png"
+import feature2 from "/features/feature2.png"
+import feature3 from "/features/feature3.png"
 
 
 export const CUSTOMERS = [
@@ -48,6 +48,8 @@ export default {
     about1,
     about2,
     about3,
-    feature1
+    feature1,
+    feature2,
+    feature3
 }
 

@@ -12,10 +12,10 @@ const Testimonials = () => {
         </div>
 
         <div className="relative flex flex-col gap-6 mt-14">
-            <BackgroundCircles number={2} variant={"top-56 left-0 -rotate-[40deg] gap-64"}/>
+            <BackgroundCircles number={2} variant={"top-96 lg:top-56 left-0 -rotate-[40deg] gap-64"}/>
             <BackgroundCircles number={1} variant={"bottom-0 right-0"}/>
 
-            <div className="grid lg:grid-cols-3 gap-5">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {TESTIMONIES.slice(0,3).map((item, index) => (
                     <TestimonialCard 
                         key={index+item.title}

@@ -13,17 +13,17 @@ const About = () => {
 
         <div className="about-img">
             <BackgroundCircles number={1} variant={"right-[28rem] top-10 gap-40"}/>
-            <div className="flex flex-col h-fit gap-5 right z-40">
+            <div className="flex flex-col h-fit lg:gap-5 z-40">
                 <div className="about-img-content-container">
-                    <img src={images.about2} alt="" />
+                    <img src={images.about2} alt="about" className="h-full w-full object-cover"/>
                 </div>
                 <div className="about-img-content-container">
-                    <img src={images.about3} alt="" />
+                    <img src={images.about3} alt="about" className="h-full w-full object-cover"/>
                 </div>
             </div>
 
             <div className="rounded-3xl overflow-clip flex flex-col items-center justify-center">
-                <img src={images.about1} alt="" />
+                <img src={images.about1} alt="about"  className="h-full w-full object-cover"/>
             </div>
         </div>
     </section>

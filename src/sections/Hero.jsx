@@ -24,7 +24,7 @@ const Hero = () => {
                     <Button title="View Menu" type="transparent"/>
                 </div>
 
-                <div className='flex gap-12 items-center mt-[45.5px]'>
+                <div className='flex gap-5 lg:gap-12 items-center mt-[45.5px]'>
                     <Details items={CUSTOMERS} heading={"20,000+"} title={"Trusted Customers"}/>
                     <Details items={MENUS} heading={"500+"} title={"Menus"}/>
                 </div>
@@ -32,10 +32,10 @@ const Hero = () => {
             </div>
 
             <img src={images.heroImg} alt=""/>
-            <div className='absolute top-5 right-0 bg-[#FD5200] opacity-15 size-[700px] rounded-full blur-[150px]'></div>
+            <div className='absolute top-28 lg:top-5 lg:right-0 bg-[#FD5200] opacity-15 size-[700px] rounded-full blur-[150px]'></div>
 
         </div>
-        <div className='w-full flex justify-between items-end'>
+        <div className='w-full flex flex-col lg:flex-row justify-between items-center lg:items-end gap-4'>
             <Carousel />
             <Socials variant={"size-10 p-2 rounded-full border-[1px] border-black cursor-pointer"}/>
         </div>

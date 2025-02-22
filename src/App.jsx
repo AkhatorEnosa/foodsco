@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar"
+import Navbar from "./sections/Navbar"
 import About from "./sections/About"
 import Explore from "./sections/Explore"
 import Features from "./sections/Features"
@@ -9,9 +9,9 @@ import Testimonials from "./sections/Testimonials"
 const App = () => {
   return (
     <main>
-      {/* <Navbar /> */}
-      {/* <Hero /> */}
-      {/* <About /> */}
+      <Navbar />
+      <Hero />
+      <About />
       <Features />
       <Explore />
       <Testimonials />
