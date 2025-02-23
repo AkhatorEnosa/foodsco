@@ -30,9 +30,11 @@ const Hero = () => {
                 </div>
 
             </div>
-
-            <img src={images.heroImg} alt=""/>
-            <div className='absolute top-28 lg:top-5 lg:right-0 bg-[#FD5200] opacity-15 size-[700px] rounded-full blur-[150px]'></div>
+            
+            <div className='hero-image'>
+                <img src={images.heroImg} alt="dish" />
+                <div className='absolute top-28 lg:top-5 lg:right-0 bg-[#FD5200] opacity-15 size-[700px] rounded-full blur-[150px]'></div>
+            </div>
 
         </div>
         <div className='w-full flex flex-col lg:flex-row justify-between items-center lg:items-end gap-4'>
