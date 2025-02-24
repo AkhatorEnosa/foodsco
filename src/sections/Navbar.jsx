@@ -3,17 +3,21 @@ import { icons } from "../../constants"
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
+  const [currSection, setCurrSection] = useState("home")
+  
+  const links = [ 'home', 'about', 'featured', 'menu']
 
   return (
-    <nav>
-        <div className="large-screen-menu">
+     <>
+        <div className="large-screen-menu ">
           <h1>Foodsco</h1>
           
           <ul>
-              <li className="primary-text-color underline">Home</li>
-              <li>About</li>
-              <li>Featured</li>
-              <li>Menu</li>
+            {
+              links.map(link => (
+                <li key={link}><a href={`#${link}`} className={`capitalize ${currSection == link && "primary-text-color underline"}`} onClick={() => setCurrSection(link)}>{link}</a></li>
+              ))
+            }
           </ul>
 
           <div className="icons">
@@ -31,10 +35,11 @@ const Navbar = () => {
           
           <div className={`mobile-screen-menu-items ${!menu ? "hidden" : "h-screen"}`}>
             <ul>
-                <li className="primary-text-color">Home</li>
-                <li>About</li>
-                <li>Featured</li>
-                <li>Menu</li>
+              {
+                links.map(link => (
+                  <li key={link}><a href={`#${link}`} className={`capitalize ${currSection == link && "primary-text-color underline"}`} onClick={() => setCurrSection(link) & setMenu(!menu)}>{link}</a></li>
+                ))
+              }
             </ul>
             <div className="mobile-screen-menu-icons">
                 <img src={icons.search} alt="" />
@@ -44,7 +49,7 @@ const Navbar = () => {
           </div>
         </div>
         
-    </nav>
+     </>
   )
 }
 

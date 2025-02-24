@@ -5,13 +5,13 @@ import Menu from "../components/Menu"
 
 const Explore = () => {
   return (
-    <section className="section-wrapper py-12">
+    <section className="section-wrapper py-12" id="menu">
         <div className="section-header">
             <h1 className="section-heading">Explore Our Menu</h1>
             <p>Our culinary creations come to life.</p>
         </div>
 
-        <div className="relative w-full flex flex-col md:flex-row gap-10 lg:justify-between lg:items-end mt-14 mb-10">
+        <div className="relative w-full flex flex-col md:flex-row gap-10 justify-center items-center lg:justify-between lg:items-end mt-14 mb-10">
             <BackgroundCircles number={3} variant={"top-20 rotate-12 gap-40"}/>
 
             <Menu heading={"Meals"} type={MEALS}/>

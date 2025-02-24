@@ -1,13 +1,14 @@
-import { images } from '../../constants'
-import { CUSTOMERS, MENUS } from '../../constants/images'
+import { useState } from 'react'
+import { CUSTOMERS, MENUS, OPTIONS } from '../../constants/images'
 import Button from '../components/Button'
 import Carousel from '../components/Carousel'
 import Details from '../components/Details'
 import Socials from '../components/Socials'
 
 const Hero = () => {
+    const [currIndex, setCurrIndex] = useState(0)
   return (
-    <section className="hero-wrapper">
+    <section className="hero-wrapper" id='home'>
         
         <div className='hero-content'>
             <div className='col-span-3'>
@@ -31,14 +32,18 @@ const Hero = () => {
 
             </div>
             
-            <div className='hero-image'>
-                <img src={images.heroImg} alt="dish" />
-                <div className='absolute top-28 lg:top-5 lg:right-0 bg-[#FD5200] opacity-15 size-[700px] rounded-full blur-[150px]'></div>
+            <div className={`hero-image ${currIndex !== 1 && "rounded-full"}`}>
+                <img src={OPTIONS[currIndex]} alt="dish"/>
             </div>
+                <div className='absolute top-28 lg:top-5 lg:right-0 bg-[#FD5200] opacity-15 size-[700px] rounded-full blur-[150px]'></div>
 
         </div>
         <div className='w-full flex flex-col lg:flex-row justify-between items-center lg:items-end gap-4'>
-            <Carousel />
+            <Carousel 
+                currIndex={currIndex} 
+                setCurrIndex={setCurrIndex}
+                images={OPTIONS}
+            />
             <Socials variant={"size-10 p-2 rounded-full border-[1px] border-black cursor-pointer"}/>
         </div>
     </section>

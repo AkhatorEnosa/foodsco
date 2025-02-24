@@ -7,7 +7,7 @@ const BackgroundCircles = ({ number, variant}) => {
         for (let index = 0; index < number; index++) {
             // const randomPosNum = Math.floor(Math.random() * 6) + 1
             
-            element.push(<div className="size-64 primary-bg-color z-50 rounded-full opacity-25 blur-[150px]"></div>)
+            element.push(<div key={index} className="size-64 primary-bg-color z-50 rounded-full opacity-25 blur-[150px]"></div>)
         }
         return element
     }

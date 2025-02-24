@@ -16,8 +16,8 @@
         background-repeat: repeat-y;
     }
 
-    nav .large-screen-menu {
-        @apply top-0 w-full flex items-center justify-between py-[10px] md:py-[50px] px-5 md:px-10 lg:px-[100px]
+    .large-screen-menu {
+        @apply w-full hidden md:flex items-center justify-between sticky top-0 bg-white/40 z-40 backdrop-blur-sm py-[10px] md:py-[50px] px-5 md:px-10 lg:px-[100px]
     }
   
     .large-screen-menu > h1 {
@@ -34,7 +34,7 @@
     }
     
     .mobile-screen-menu {
-        @apply md:hidden w-full px-5 md:px-10 py-6 bg-white/80 backdrop-blur-md fixed top-0 z-50
+        @apply md:hidden w-full px-5 md:px-10 py-6 fixed bg-white/40 z-40 backdrop-blur-sm
     }
 
     .mobile-screen-menu h1{
@@ -104,15 +104,19 @@
     }
 
     .hero-content > .hero-image {
-        @apply relative lg:absolute w-full lg:w-fit flex justify-center top-20 right-0
+        @apply relative lg:absolute w-[400px] h-[400px] lg:w-[600px] lg:h-[600px] lg:bg-black lg:rounded-full overflow-clip flex justify-center items-center top-20 -right-[20%] lg:right-0 z-20
     }
 
+    /* .hero-image > img {
+        @apply size-28
+    } */
+
     .button-opaque {
-        @apply w-fit primary-bg-color text-white px-[30px] py-[10px] text-[16px] font-semibold rounded-full hover:shadow-md
+        @apply w-fit primary-bg-color text-white px-[30px] py-[10px] text-[12px] lg:text-[16px] font-semibold rounded-full hover:shadow-md
     }
 
     .button-transparent {
-        @apply w-fit bg-transparent border-[1px] primary-border-color primary-text-color px-[30px] py-[10px] text-[16px] font-medium rounded-full hover:shadow-md
+        @apply w-fit bg-transparent border-[1px] primary-border-color primary-text-color px-[30px] py-[10px] text-[12px] lg:text-[16px] font-medium rounded-full hover:shadow-md
     }
 
     .details {
@@ -154,24 +158,27 @@
     }
 
     .featured {
-        @apply relative w-full flex flex-col justify-center items-center rounded-xl lg:rounded-[29.6px] bg-white/50 backdrop-blur-md shadow-lg px-4 py-3 lg:px-8 lg:py-7 z-30
+        @apply relative w-full flex flex-col justify-center items-center rounded-xl bg-white/50 backdrop-blur-md shadow-lg px-4 py-3 lg:px-8 lg:py-7 z-30
     }
 
     .featured-img {
-        @apply relative -top-7 lg:-top-14 flex justify-center items-center size-32 lg:w-fit lg:h-fit rounded-full overflow-clip
+        @apply relative -top-7 lg:-top-14 flex justify-center items-center size-32 lg:size-[183px] rounded-full overflow-clip
     }
 
     .featured-rating {
-        @apply  w-full flex gap-2 items-end text-[#FFD700] mb-3
+        @apply  w-full flex gap-2 items-center text-[#FFD700] mb-3
     }
+
+    /* .featured-rating > img {
+        @apply lg:size-[22px]
+    } */
 
     .featured-rating p {
         font-family: "Inter", serif; 
-        @apply text-sm
     }
 
     .featured-content {
-        @apply flex flex-col gap-2 lg:gap-4
+        @apply w-full flex flex-col gap-2 lg:gap-4
     }
 
     .featured-desc {
@@ -180,19 +187,15 @@
     }
 
     .featured-desc > h3 {
-        @apply font-bold text-lg lg:text-2xl 
-    }
-
-    .featured-desc > p {
-        @apply lg:text-xl leading-7
+        @apply font-bold line-clamp-1
     }
 
     .featured-footer {
-        @apply w-full flex justify-between items-center font-bold text-2xl lg:text-[28px]
+        @apply w-full flex justify-between items-center font-bold
     }
 
     .featured-footer  span {
-       @apply p-[9.4px] primary-bg-color rounded-full flex items-center justify-center
+       @apply primary-bg-color rounded-full flex items-center justify-center
     }
 
     .menu {
