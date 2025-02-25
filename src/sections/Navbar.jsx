@@ -1,11 +1,14 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { icons } from "../../constants"
+import { ThemeContext } from "../context/ThemeContext"
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
   const [currSection, setCurrSection] = useState("home")
   
   const links = [ 'home', 'about', 'featured', 'menu']
+
+  const { theme, toggleTheme } = useContext(ThemeContext)
 
   return (
      <>
@@ -24,6 +27,10 @@ const Navbar = () => {
               <img src={icons.search} alt="" />
               <img src={icons.profile} alt="" />
               <img src={icons.basket} alt="" />
+
+              {/* <div onClick={toggleTheme}>
+                <i className={`bi bi-${theme === 'dark' ? 'brightness-high' : 'moon'}`}></i>
+              </div> */}
           </div>
         </div>
 

@@ -77,7 +77,7 @@
     }
 
     .icons {
-        @apply hidden md:flex gap-4
+        @apply hidden md:flex gap-4 justify-center items-center
     }
 
     .icons img {
@@ -90,7 +90,7 @@
     }
 
     .hero-content {
-        @apply relative pt-12 lg:pt-24 w-full lg:grid grid-cols-5 justify-center items-center
+        @apply relative pt-12 lg:pt-24 w-full lg:grid grid-cols-5 justify-center items-center lg:gap-24
     }
 
     .hero-heading {
@@ -103,8 +103,12 @@
         @apply lg:text-lg lg:leading-[22.68px] max-w-[646.7px]
     }
 
-    .hero-content > .hero-image {
-        @apply relative lg:absolute w-[400px] h-[400px] lg:w-[600px] lg:h-[600px] lg:bg-black lg:rounded-full overflow-clip flex justify-center items-center top-20 -right-[20%] lg:right-0 z-20
+    .hero-image-div {
+        @apply  flex col-span-2 my-8 lg:my-0 justify-center items-center lg:gap-3
+    }
+
+    .hero-image-div > .hero-image {
+        @apply relative overflow-clip flex justify-center items-center lg:right-0 z-20 w-[300px] h-[300px] lg:min-w-[500px] lg:min-h-[500px] lg:top-20
     }
 
     /* .hero-image > img {

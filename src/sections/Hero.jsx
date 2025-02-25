@@ -32,10 +32,12 @@ const Hero = () => {
 
             </div>
             
-            <div className={`hero-image ${currIndex !== 1 && "rounded-full"}`}>
-                <img src={OPTIONS[currIndex]} alt="dish"/>
-            </div>
+            <div className="hero-image-div">
+                <div className={`hero-image ${currIndex !== 1 && " lg:rounded-full rounded-full"}`}>
+                    <img src={OPTIONS[currIndex]} alt="dish"/>
+                </div>
                 <div className='absolute top-28 lg:top-5 lg:right-0 bg-[#FD5200] opacity-15 size-[700px] rounded-full blur-[150px]'></div>
+            </div>
 
         </div>
         <div className='w-full flex flex-col lg:flex-row justify-between items-center lg:items-end gap-4'>
