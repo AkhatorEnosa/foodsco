@@ -44,7 +44,7 @@ const Testimonials = () => {
 
         <div className="banner relative my-10 lg:my-28 w-full text-center bg-[url(/backdrop.png)] bg-no-repeat bg-cover py-10 px-5 lg:py-40 rounded-3xl gap-6 overflow-clip">
             <div className="bg-black/70 w-full h-full absolute top-0 left-0 z-10"/>
-            <div className="relative w-full flex flex-col gap-3 items-center z-30">
+            <div className="relative w-full flex flex-col gap-6 items-center z-30">
                 <h2>Savor the Flavor of Home, Every Time You Eat</h2>
                 <Button title={"See more"}/>
             </div>

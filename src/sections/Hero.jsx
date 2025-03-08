@@ -6,7 +6,7 @@ import Details from '../components/Details'
 import Socials from '../components/Socials'
 
 const Hero = () => {
-    const [currIndex, setCurrIndex] = useState(0)
+    const [currIndex, setCurrIndex] = useState(1)
   return (
     <section className="hero-wrapper" id='home'>
         

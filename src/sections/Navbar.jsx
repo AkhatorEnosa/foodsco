@@ -1,6 +1,6 @@
-import { useContext, useState } from "react"
+import { useState } from "react"
 import { icons } from "../../constants"
-import { ThemeContext } from "../context/ThemeContext"
+// import { ThemeContext } from "../context/ThemeContext"
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
@@ -8,7 +8,7 @@ const Navbar = () => {
   
   const links = [ 'home', 'about', 'featured', 'menu']
 
-  const { theme, toggleTheme } = useContext(ThemeContext)
+  // const { theme, toggleTheme } = useContext(ThemeContext)
 
   return (
      <>

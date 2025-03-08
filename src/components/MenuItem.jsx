@@ -5,7 +5,7 @@ const MenuItem = ({ itemImg, title, price, rating}) => {
     <div className="menu-item">
         <div className="lg:w-[310px] flex gap-2 px-2 items-center">
             <div className="w-12 lg:h-fit lg:w-fit lg:min-w-[70px] lg:min-h-[70px] shadow-md rounded-full overflow-clip">
-                <img src={itemImg} alt="food" />
+                <img src={itemImg} alt="food" className="w-full h-full scale-110"/>
             </div>
             <div className="flex flex-col gap-2">
                 <div className="flex flex-col gap-1 font-bold">

@@ -21,7 +21,7 @@ const FeaturedCard = ({ image, rating, title, desc, price, active }) => {
             </div>
             <div className={`featured-footer ${active ? "text-2xl lg:text-[28px]" : "text-2xl lg:text-2xl"}`}>
                 <p>{price}</p>
-                <span className={`${active ? "p-[9.4px]" : "p-2"}`}><img src={icons.plus} alt="" /></span>
+                <span className={`size-9 text-white ${active ? "p-5" : "p-3"}`}><i className="bi bi-plus text-3xl"></i></span>
             </div>
         </div>
     </div>

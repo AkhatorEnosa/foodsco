@@ -22,7 +22,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="rounded-3xl overflow-clip flex flex-col items-center justify-center">
+            <div className="rounded-3xl border-4 overflow-clip flex flex-col items-center justify-center">
                 <img src={images.about1} alt="about"  className="h-full w-full object-cover"/>
             </div>
         </div>

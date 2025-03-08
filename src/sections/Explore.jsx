@@ -17,10 +17,10 @@ const Explore = () => {
             <Menu heading={"Meals"} type={MEALS}/>
 
             <div className="chef hidden absolute w-full lg:flex justify-center">
-                <div className="w-fit h-[459px] rounded-t-[217.17px] flex justify-center z-10 overflow-clip">
-                    <img src={images.chef} alt="" />
+                <div className="relative bg-[#110e09] w-[300px] h-[429px] rounded-t-[217.17px] flex justify-center items-end z-10 overflow-clip">
+                    <img src={images.chef} alt="" className="h-[95%]"/>
                 </div>
-                <div className="absolute w-[330px] h-14 bg-white z-20 blur-md -bottom-8"></div>
+                <div className="absolute w-[500px] h-20 bg-white z-20 blur-md -bottom-10"></div>
             </div>
             
             <Menu heading={"Drinks"} type={DRINKS}/>

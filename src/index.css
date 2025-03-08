@@ -17,7 +17,7 @@
     }
 
     .large-screen-menu {
-        @apply w-full hidden md:flex items-center justify-between sticky top-0 bg-white/40 z-40 backdrop-blur-sm py-[10px] md:py-[50px] px-5 md:px-10 lg:px-[100px]
+        @apply w-full hidden md:flex items-center justify-between sticky top-0 bg-gradient-to-b from-white to-transparent z-40 backdrop-blur-sm py-[10px] md:py-[50px] px-5 md:px-10 lg:px-[100px]
     }
   
     .large-screen-menu > h1 {
@@ -145,7 +145,7 @@
     }
 
     .about-desc {
-        @apply  flex flex-col text-center justify-center items-center
+        @apply  flex flex-col justify-center
     }
 
     .about-img {
@@ -204,7 +204,7 @@
 
     .menu {
         font-family: "Nunito", serif;
-        @apply  w-fit flex flex-col pt-2 p-3 lg:pt-4 lg:p-6 bg-white/90 backdrop-blur-[100px] shadow-md gap-4 rounded-3xl justify-center items-center z-30
+        @apply  w-fit flex flex-col pt-2 p-3 lg:pt-4 lg:p-6 bg-white shadow-md gap-4 rounded-3xl justify-center items-center z-30
     }
 
     .menu > h3 {
